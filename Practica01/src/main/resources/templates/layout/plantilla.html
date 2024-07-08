@@ -1,0 +1,44 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    
+    <head th:fragment="head">
+        <title>Arboles</title>
+        <meta charset="UTF-8"/>
+        
+        <!-- Bootstrap CSS -->
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <!-- Iconos vectoriales -->
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+        <!-- biblioteca de JavaScript que simplifica la manipulación del DOM, 
+        la gestión de eventos, las animaciones y las solicitudes AJAX. -->
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <!-- biblioteca que se utiliza para crear elementos emergentes -->
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <!-- interacciones dinámicas y los componentes de Bootstrap, 
+        como los modales, los carruseles y las pestañas. -->
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    
+    <body>
+        <header th:fragment="header" class="header">    
+            <section id="main-header" class="py-2 bg-success text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1><i class="fas fa-tree"></i> Arboles de Costa Rica</h1>
+                        </div>
+                    </div>                    
+                </div>
+            </section>  
+        </header>
+        
+        <footer th:fragment="footer" class="bg-info text-white mt-5 p-2">
+            <div class="container">
+                <div class="col">
+                    <p class="lead text-center">&COPY Derechos Reservados 2024</p>
+                </div>
+            </div>
+        </footer>        
+    </body>
+</html>
